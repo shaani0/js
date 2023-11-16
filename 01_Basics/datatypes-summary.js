@@ -32,3 +32,25 @@ const myfunction = function(){
 }
 
 console.log(typeof anotherId );
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let myyoutubename = "shayankhan"
+
+let anothername = myyoutubename
+ anothername = "shaani"
+
+ console.log(anothername);
+
+ let userone = {
+    email :"hitesh@google.com",
+    upi : "ht@yhl"
+ }
+
+ let usertwo = userone
+
+ usertwo.email = "sk@google.com"
+
+ console.log(userone.email);
+ console.log(usertwo.email);
