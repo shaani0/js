@@ -15,5 +15,18 @@ let booleanisloggedIn = Boolean(isloggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber)
-console.log(typeof stringNumber);
+//console.log(stringNumber)
+//console.log(typeof stringNumber);
+   
+//OPERATIONS 
+
+let value = 3
+
+let negvalue = -value
+//console.log(negvalue);
+
+let gameNumber = 100
+
+++gameNumber;
+
+console.log(gameNumber);
