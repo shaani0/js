@@ -30,7 +30,7 @@ for (const [key,value] of map) {
 
 const myobject = {
 
-    game1 = 'NFS',
-    game = 'IGI'
+    game1 : 'NFS',
+    game :'IGI'
 
 }
