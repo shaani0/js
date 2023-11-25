@@ -36,7 +36,7 @@ buttons.forEach( function (button){
 ```
 
 <!-- PROJECT 2 solution -->
-
+```javascript
 const form = document.querySelector('form');
 
 // this use case will give you empty value
@@ -68,4 +68,5 @@ else{
 results.textContent =`over weight: ${bmi} `
 }
 }
-});
+}); 
+```
