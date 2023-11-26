@@ -3,7 +3,7 @@
 project link : []( https://stackblitz.com/edit/dom-project-chaiaurcode-grzwbu?file=1-colorChanger%2Fchaiaurcode.js,1-colorChanger%2Findex.html,1-colorChanger%2Fstyle.css)
 
 
-#SOLUTION CODE 
+## PROJECT 1 SOLUTION
 
 ```javascript
 console.log(khan);
@@ -35,7 +35,9 @@ buttons.forEach( function (button){
 });
 ```
 
-<!-- PROJECT 2 solution -->
+## PROJECT 2 SOLUTION
+
+
 ```javascript
 const form = document.querySelector('form');
 
@@ -69,4 +71,23 @@ results.textContent =`over weight: ${bmi} `
 }
 }
 }); 
+```
+
+
+## PORJECT 3 SOLUTION 
+
+```javascript
+
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock');
+
+// you can use both (query.selector) & (getElementbyid)
+// their result will be same .
+
+setInterval(function (){
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
 ```
