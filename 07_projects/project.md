@@ -143,9 +143,9 @@ function validateGuess(guess){
     else{
     displayGuess(guess)
     checkGuess(guess)
-    }
-  }
-}
+    };
+  };
+};
 
 function checkGuess(guess){
   if(guess === randomNumber){
@@ -153,7 +153,7 @@ function checkGuess(guess){
     endGame()
   }
   else if (guess < randomNumber){
-    displayMessage(`Number is TOOO low`)
+    displayMessage(`Number is TOOO Low`)
   }
   else if (guess > randomNumber){
     displayMessage(`Number is TOOO High`)
