@@ -7,15 +7,30 @@
 </head>
 <body>
     <h1>Chai Aur Javascript</h1>
-    <button id="stop">Stop</button>
     <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
 </body>
 <script>
-   const sayDate = function(str){
+//    const sayDate = function(str){
+//     console.log(str, Date.now())
+// }
+// const intervalid  = setInterval(sayDate, 1000, "kh")
+
+// clearInterval(intervalid)
+
+let intervalId
+
+const sayDate = function(str){
     console.log(str, Date.now())
 }
-const intervalid  = setInterval(sayDate, 1000, "kh")
 
-clearInterval(intervalid)
+
+document.querySelector('#start').addEventListener('click', function(){
+ intervalId = setInterval(sayDate, 1000, "shayan")
+})
+document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(intervalId);
+})
 </script>
 </html> 
