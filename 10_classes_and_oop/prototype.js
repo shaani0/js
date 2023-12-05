@@ -23,6 +23,47 @@ Array.prototype.king = function(){
     console.log(`king says hey`);
 }
 
-myHeros.khan()
-myHeros.king()
+// myHeros.khan()
+// myHeros.king()
 // HeroPower.king()
+
+
+const user = {
+    name: "shayan",
+    email: "ss@gamil.com"
+}
+
+const Teacher = {
+    makeVideo : true
+}
+
+const TeachingSupport ={
+    isAvailable : false
+
+}
+
+const TAsupport = {
+    makeAssignment: 'JS assignment',
+    fulltime: true,
+    __proto__: TeachingSupport
+    
+}
+
+Teacher.__proto__ = user
+
+// MODERN SYNTAX
+
+Object.setPrototypeOf(TeachingSupport, Teacher)
+
+
+let anotherusername = "chai aur code     "
+
+
+String.prototype.trueLength =function(){
+    console.log(`${this}`);
+    console.log(`true length is : ${this.trim().length}`);
+}
+
+anotherusername.trueLength()
+"hitesh".trueLength()
+"icetea".trueLength()
